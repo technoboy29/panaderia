@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/bread" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginTop="30dp"
+            android:text="Datos Personales"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="306dp"
+
+                        android:id="@+id/editText1"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Nombres*"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="306dp"
+                        android:id="@+id/editText2"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Apellidos*"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="306dp"
+                        android:id="@+id/editText3"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Nombre de usuario*"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="306dp"
+                        android:id="@+id/editText4"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Correo*"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="306dp"
+                        android:id="@+id/editText5"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Contraseña*"
+                        android:inputType="textPassword" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="306dp"
+                        android:id="@+id/editText6"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Confirme contraseña*"
+                        android:inputType="textPassword" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="306dp"
+                        android:id="@+id/editText7"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="Celular*"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="306dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/fechanacimiento"
+                    android:layout_weight="1"></Spinner>
+
+
+                <Spinner
+                    android:id="@+id/fechan"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="306dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/sexo"
+                    android:layout_weight="1"></Spinner>
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Acepto términos y condiciones"
+                    android:textCursorDrawable="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/btnThree"
+                    android:layout_width="306dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Enviar" />
+
+                <Button
+                    android:id="@+id/btnFour"
+                    android:layout_width="306dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Volver"
+                    android:layout_marginBottom="10dp"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

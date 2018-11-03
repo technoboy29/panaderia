@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/boss"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/breado"
+            android:title="Panadería" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/cake"
+            android:title="Pastelería" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/can"
+            android:title="Bebidas" />
+
+        <item
+        android:id="@+id/nav_manager"
+        android:icon="@drawable/groceries"
+        android:title="Comidas" />
+
+        <item
+            android:id="@+id/nav_manager2"
+            android:icon="@drawable/basket"
+            android:title="Otros" />
+
+    </group>
+
+    <item android:title="Redes Sociales">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_sendo"
+                android:icon="@drawable/instagram"
+                android:title="Instagram" />
+            <item
+                android:id="@+id/nav_sendt"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/gmail"
+                android:title="Gmail" />
+        </menu>
+    </item>
+
+</menu>
